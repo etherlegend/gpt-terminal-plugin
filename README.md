@@ -1,7 +1,7 @@
 # 🤖🖥️ TerminalGPT 
 #### ChatGPT Universal Terminal / Command Line Plugin
 
-This is a universal terminal/command line plugin that'll let you equip ChatGPT with a command line or terminal to run commands in your computer. You can state what you want in natural language, like "translate file somefile.txt in documents folder from english to french" or "create a pet-store website in my xyz folder" and the plugin will accomplish tasks for you.
+Use ChagGPT as a terminal to get things done for you, connecting with your computer. You can state what you want in natural language, like "translate file somefile.txt in documents folder from english to french" or "create a pet-store website in my xyz folder" and the plugin will accomplish tasks for you.
 
 First of all, you need ChatGPT plugin/developer access to try this as this is a plugin for ChatGPT. If you do not already have plugin developer access, please [join the waitlist](https://openai.com/waitlist/plugins).
 
@@ -32,10 +32,12 @@ Try translating content between files, summarising text etc etc..
 
 ## Getting Started
 
+First of all, you need ChatGPT plugin/developer access to try this as this is a plugin for ChatGPT. If you do not already have plugin developer access, please [join the waitlist](https://openai.com/waitlist/plugins). Once you've access to the ChatGPT plugins, you can set this up locally to try it out.
+
 1. Clone the repository
 
 ```
-git clone https://github.com/yourusername/terminal-gpt.git
+git clone https://github.com/etherlegend/terminal-gpt.git
 ```
 
 2. Navigate to the project directory
@@ -68,6 +70,12 @@ Once the local server is running:
 5. Enter in localhost:5004 since this is the URL the server is running on locally, then select "Find manifest file".
 
 The plugin should now be installed and enabled! You can start with a question like "What is on my todo list" and then try adding something to it as well!
+
+
+
+You can read the [plugin documentation from OpenAI](https://platform.openai.com/docs/plugins/).
+
+If you are looking for a boilerplate to build plugins in NodeJs, try my ChatGPT NodeJS boilerplate [here](https://github.com/etherlegend/chatgpt-plugin-node-todo). 
 
 ### Endpoints
 
