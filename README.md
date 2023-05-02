@@ -32,6 +32,8 @@ Try translating content between files, summarising text etc etc..
 
 ## Getting Started
 
+First of all, you need ChatGPT plugin/developer access to try this as this is a plugin for ChatGPT. If you do not already have plugin developer access, please [join the waitlist](https://openai.com/waitlist/plugins).
+
 1. Clone the repository
 
 ```
@@ -68,6 +70,12 @@ Once the local server is running:
 5. Enter in localhost:5004 since this is the URL the server is running on locally, then select "Find manifest file".
 
 The plugin should now be installed and enabled! You can start with a question like "What is on my todo list" and then try adding something to it as well!
+
+
+
+You can read the [plugin documentation from OpenAI](https://platform.openai.com/docs/plugins/).
+
+If you are looking for a boilerplate to build plugins in NodeJs, try my ChatGPT NodeJS boilerplate [here](https://github.com/etherlegend/chatgpt-plugin-node-todo). 
 
 ### Endpoints
 
