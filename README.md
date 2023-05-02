@@ -1,90 +1,73 @@
-# ChatGPT Todo Plugin In NodeJs
+# ChatGPT Universal Terminal
 
-This repository provides a simple example of a Todo plugin for ChatGPT using Node.js and TypeScript, to help you write your own ChatGPT plugins in Nodejs. The plugin allows users to add, retrieve, and delete Todo items for different usernames.
+This is a universal terminal plugin for ChatGPT using Node.js and TypeScript. The plugin allows you to accomplish goals by running terminal commands, including reading & writing files, establishing cool workflows, etc. The possibilities are crazy.
 
-Get a todo list ChatGPT plugin up and running in under 5 minutes using NodeJS. If you do not already have plugin developer access, please [join the waitlist](https://openai.com/waitlist/plugins). This is similar to the python sample from OpenAI 
+You need ChatGPT plugin/developer access to try this. If you do not already have plugin developer access, please [join the waitlist](https://openai.com/waitlist/plugins).
 
-I would also suggest you to read the [plugin documentation from OpenAI](https://platform.openai.com/docs/plugins/) if you havn't done this yet.
+You can read the [plugin documentation from OpenAI](https://platform.openai.com/docs/plugins/).
 
-![image info](./Demo.png)
+If you are looking for a boilerplate to build plugins in NodeJs, try my ChatGPT NodeJS boilerplate [here](https://github.com/etherlegend/chatgpt-universal-terminal)
 
 ## Features
 
-- Add Todo items for a specific user
-- Retrieve Todo items for a specific user
-- Delete Todo items for a specific user
+- Run command line programs
+- Get system information, such as:
+  - OS version
+  - Local time
+  - Current folder
 
 ## Getting Started
 
-### Prerequisites
+1. Clone the repository
 
-- [Node.js](https://nodejs.org/en/download/)
-- [npm](https://www.npmjs.com/get-npm) (comes with Node.js)
-
-### Installation
-
-1. Clone the repository:
-
-```sh
-git clone https://github.com/yourusername/chatgpt-plugin-node-todo.git
-cd chatgpt-plugin-node-todo
+```
+git clone https://github.com/yourusername/chatgpt-universal-terminal.git
 ```
 
-2. Install the required dependencies:
+2. Navigate to the project directory
 
-```sh
+```
+cd chatgpt-universal-terminal
+```
+
+3. Install the required dependencies
+
+```
 npm install
 ```
 
-### Running the project
+4. Start the server
 
-For development:
-
-```sh
+```
 npm start
 ```
+
+The server will now be running on `http://localhost:5004`.
 
 
 Once the local server is running:
 
-1. Navigate to https://chat.openai.com. 
-2. In the Model drop down, select "Plugins" (note, if you don't see it there, you don't have access yet).
+1. Navigate to https://chat.openai.com.
+2. In the Model drop down, select "Plugins" (note, if you do not see it there, you do not have access yet).
 3. Select "Plugin store"
 4. Select "Develop your own plugin"
-5. Enter in `localhost:5003` since this is the URL the server is running on locally, then select "Find manifest file".
+5. Enter in localhost:5004 since this is the URL the server is running on locally, then select "Find manifest file".
 
-The plugin should now be installed and enabled! You can start with a question like "What is on my todo list" and then try adding something to it as well! 
+The plugin should now be installed and enabled! You can start with a question like "What is on my todo list" and then try adding something to it as well!
 
 
-## API Endpoints
+## Usage
 
-### Add Todo
+To use this plugin in ChatGPT, configure your ChatGPT plugin settings to point to the running server.
 
-- URL: `/todos/:username`
-- Method: `POST`
-- URL Params: `username` (string)
-- Data Params: `{ "todo": "A todo item" }`
-- Success Response: `200 OK`
+### Endpoints
 
-### Get Todos
-
-- URL: `/todos/:username`
-- Method: `GET`
-- URL Params: `username` (string)
-- Success Response: `200 OK` with JSON array of todos
-
-### Delete Todo
-
-- URL: `/todos/:username`
-- Method: `DELETE`
-- URL Params: `username` (string)
-- Data Params: `{ "todo_idx": 0 }` (index of the todo item to delete)
-- Success Response: `200 OK`
-
-## Contributing
-
-Contributions are welcome! Please create a fork of this repository, make your changes in a new branch, and submit a pull request.
+- `GET /system/os-version`: Returns the OS version
+- `GET /system/local-time`: Returns the local time
+- `GET /system/current-folder`: Returns the current folder
+- `POST /system/command`: Runs a command and returns the output
 
 ## License
 
-This project is licensed under the ISC License.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+

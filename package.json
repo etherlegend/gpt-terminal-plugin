@@ -1,7 +1,7 @@
 {
-  "name": "chatgpt-plugin-node-todo",
+  "name": "chatgpt-plugin-terminal",
   "version": "1.0.0",
-  "description": "Quickstart your ChatGPT Plug In development with this NodeJS boilerplate",
+  "description": "ChatGPT universal command line plugin",
   "main": "src/index.js",
   "scripts": {
     "build": "tsc",

@@ -1,7 +1,10 @@
 import express from 'express';
 import cors from 'cors';
-import fs from 'fs';
 import { json } from 'body-parser';
+import os from 'os';
+import fs from 'fs';
+import { exec } from 'child_process';
+import path from 'path';
 
 const app = express();
 
@@ -10,39 +13,37 @@ app.use(cors({
 }));
 app.use(json());
 
-// Keep track of todos. Does not persist if Node.js session is restarted.
-const _TODOS: { [username: string]: any[] } = {};
-
-const logTodos = (username:string) => {
-  console.log('Todos:');
-  console.log(_TODOS[username]);
-};
-
-app.post('/todos/:username', async (req, res) => {
-  const username = req.params.username;
-  if (!_TODOS[username]) {
-    _TODOS[username] = [];
-  }
-  _TODOS[username].push(req.body.todo);
-  logTodos(username);
-  res.status(200).send('OK');
+app.get('/system/os-version', async (_, res) => {
+  const osVersion = os.release();
+  res.status(200).json({ os_version: osVersion });
 });
 
-app.get('/todos/:username', async (req, res) => {
-  const username = req.params.username;
-  logTodos(username);
-  res.status(200).json(_TODOS[username] || []);
+app.get('/system/local-time', async (_, res) => {
+  const localTime = new Date().toLocaleString();
+  res.status(200).json({ local_time: localTime });
 });
 
-app.delete('/todos/:username', async (req, res) => {
-  const username = req.params.username;
-  const todoIdx = req.body.todo_idx;
-  if (0 <= todoIdx && todoIdx < _TODOS[username].length) {
-    _TODOS[username].splice(todoIdx, 1);
-  }
-  logTodos(username);
-  res.status(200).send('OK');
+app.get('/system/current-folder', async (_, res) => {
+  const currentFolder = process.cwd();
+  res.status(200).json({ current_folder: currentFolder });
 });
+
+app.post('/system/command', async (req, res) => {
+  const command = req.body.command;
+
+  exec(command, (error, stdout, stderr) => {
+    if (error) {
+      res.status(500).json({ output: `Error: ${error.message}` });
+      return;
+    }
+    if (stderr) {
+      res.status(200).json({ output: `Stderr: ${stderr}` });
+      return;
+    }
+    res.status(200).json({ output: `Stdout: ${stdout}` });
+  });
+});
+
 
 app.get('/logo.png', async (_, res) => {
   const filename = 'logo.png';
@@ -74,8 +75,8 @@ app.get('/openapi.yaml', async (_, res) => {
 });
 
 const main = () => {
-  app.listen(5003, '0.0.0.0', () => {
-    console.log('Server running on http://0.0.0.0:5003');
+  app.listen(5004, '0.0.0.0', () => {
+    console.log('Server running on http://0.0.0.0:5004');
   });
 };
 
