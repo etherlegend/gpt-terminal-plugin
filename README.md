@@ -69,11 +69,6 @@ Once the local server is running:
 
 The plugin should now be installed and enabled! You can start with a question like "What is on my todo list" and then try adding something to it as well!
 
-
-## Usage
-
-To use this plugin in ChatGPT, configure your ChatGPT plugin settings to point to the running server.
-
 ### Endpoints
 
 - `GET /system/os-version`: Returns the OS version
