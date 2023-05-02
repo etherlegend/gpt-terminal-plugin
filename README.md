@@ -1,4 +1,4 @@
-# TerminalGPT 
+# 🤖▶️ TerminalGPT 
 ChatGPT Universal Terminal / Command Line Plugin
 
 This is a universal terminal/command line plugin that'll let you use ChatGPT as a terminal using natural language. The plugin allows you to accomplish goals by running terminal commands, including reading & writing files, establishing cool workflows, etc. The possibilities are crazy.
