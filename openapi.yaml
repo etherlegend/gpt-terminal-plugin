@@ -1,7 +1,7 @@
 openapi: 3.0.1
 info:
   title: System Info and Command Runner Plugin
-  description: A plugin that allows users to run command line programs after obtaining the system information.
+  description: A plugin that allows users to run command line programs after obtaining the system information to accomplish it's goal.
   version: 'v1'
 servers:
   - url: http://localhost:5004

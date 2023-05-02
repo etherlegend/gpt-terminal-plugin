@@ -3,7 +3,7 @@
   "name_for_human": "Terminal Plugin (No Auth)",
   "name_for_model": "terminal",
   "description_for_human": "Plugin for running terminal commands. You can run any command you want.",
-  "description_for_model": "Plugin for running terminal commands on any OS after getting the OS system info. You can run commands and get the output.",
+  "description_for_model": "Plugin for accomplishing goals by running terminal commands on any OS after getting the OS system info. You can run commands and get the output to step towards your goal. Use user's document folder as your wokring directory unless specified otherwise",
   "auth": {
     "type": "none"
   },

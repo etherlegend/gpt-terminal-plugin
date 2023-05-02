@@ -24,23 +24,23 @@ app.get('/system/local-time', async (_, res) => {
 });
 
 app.get('/system/current-folder', async (_, res) => {
-  const currentFolder = process.cwd();
+  const currentFolder = os.homedir();
   res.status(200).json({ current_folder: currentFolder });
 });
 
 app.post('/system/command', async (req, res) => {
   const command = req.body.command;
 
-  exec(command, (error, stdout, stderr) => {
+  exec(command, {cwd:os.homedir()}, (error, stdout, stderr) => {
     if (error) {
       res.status(500).json({ output: `Error: ${error.message}` });
       return;
     }
     if (stderr) {
-      res.status(200).json({ output: `Stderr: ${stderr}` });
+      res.status(200).json({ output: `Stderr: ${stderr ? stderr : "error"}` });
       return;
     }
-    res.status(200).json({ output: `Stdout: ${stdout}` });
+    res.status(200).json({ output: `Stdout: ${stdout ? (stdout.trim()===""?"ok":stdout) :"ok" }` });
   });
 });
 
