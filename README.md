@@ -8,13 +8,22 @@ You can read the [plugin documentation from OpenAI](https://platform.openai.com/
 
 If you are looking for a boilerplate to build plugins in NodeJs, try my ChatGPT NodeJS boilerplate [here](https://github.com/etherlegend/chatgpt-universal-terminal)
 
-## Features
+## What you can do with it
 
-- Run command line programs
-- Get system information, such as:
-  - OS version
-  - Local time
-  - Current folder
+#### Clone Github Repos
+
+![image Clone github repos](./images/Clone_Github_Repos.png)
+
+#### List or write files & folders
+![image Files](./images/List_Root_Folders.png)
+
+#### Create projects and websites
+![image Create](images/Create_React_Website.png)
+
+#### Do almost all text tasks between files
+![image Text](images/Write_Files.png)
+
+Try translating content between files, summarising text etc etc..
 
 ## Getting Started
 
