@@ -6,7 +6,7 @@ First of all, you need ChatGPT plugin/developer access to try this as this is a 
 
 You can read the [plugin documentation from OpenAI](https://platform.openai.com/docs/plugins/).
 
-If you are looking for a boilerplate to build plugins in NodeJs, try my ChatGPT NodeJS boilerplate [here](https://github.com/etherlegend/chatgpt-universal-terminal). 
+If you are looking for a boilerplate to build plugins in NodeJs, try my ChatGPT NodeJS boilerplate [here](https://github.com/etherlegend/chatgpt-plugin-node-todo). 
 
 The plugin can modify files in your file system, so use this responsibly :)
 
@@ -34,7 +34,7 @@ Try translating content between files, summarising text etc etc..
 1. Clone the repository
 
 ```
-git clone https://github.com/yourusername/chatgpt-universal-terminal.git
+git clone https://github.com/yourusername/terminal-gpt.git
 ```
 
 2. Navigate to the project directory
