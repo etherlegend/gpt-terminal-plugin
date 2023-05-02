@@ -32,7 +32,7 @@ Try translating content between files, summarising text etc etc..
 
 ## Getting Started
 
-First of all, you need ChatGPT plugin/developer access to try this as this is a plugin for ChatGPT. If you do not already have plugin developer access, please [join the waitlist](https://openai.com/waitlist/plugins).
+First of all, you need ChatGPT plugin/developer access to try this as this is a plugin for ChatGPT. If you do not already have plugin developer access, please [join the waitlist](https://openai.com/waitlist/plugins). Once you've access to the ChatGPT plugins, you can set this up locally to try it out.
 
 1. Clone the repository
 
