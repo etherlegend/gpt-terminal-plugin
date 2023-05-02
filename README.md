@@ -16,6 +16,10 @@ The plugin can modify files in your file system, so use this responsibly :)
 
 Pretty much anything, and more!! 
 
+![List file names with emoji](./images/List_Home_Folder_Emojis.png "Listing your home folder")
+
+![Create stories and apps](./images/Create_Story_App.png "Create stories and apps")
+
 - Work with files
 - Create projects
 - Write stories and books
