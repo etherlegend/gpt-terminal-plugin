@@ -3,7 +3,7 @@
 
 Use ChagGPT as a terminal to get things done for you, connecting with your computer. You can state what you want in natural language, like "translate file somefile.txt in documents folder from english to french" or "create a pet-store website in my xyz folder" and the plugin will accomplish tasks for you.
 
-https://youtu.be/7d6ALA-gA34
+![Watch The Video](https://youtu.be/7d6ALA-gA34)
 
 First of all, you need ChatGPT plugin/developer access to try this as this is a plugin for ChatGPT. If you do not already have plugin developer access, please [join the waitlist](https://openai.com/waitlist/plugins).
 
@@ -17,18 +17,12 @@ The plugin can modify files in your file system, so use this responsibly :)
 
 Pretty much anything, and more!! 
 
-#### Clone Github Repos
+- Work with files
+- Create projects
+- Write stories and books
+- Automate common command workflows
 
-![image Clone github repos](./images/Clone_Github_Repos.png)
-
-#### List or write files & folders
-![image Files](./images/List_Root_Folders.png)
-
-#### Create projects and websites
-![image Create](images/Create_React_Website.png)
-
-#### Do almost all text tasks between files
-![image Text](images/Write_Files.png)
+Don't try formatting your file system, be a bit cautious! 
 
 Try translating content between files, summarising text etc etc..
 
