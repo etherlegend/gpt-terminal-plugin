@@ -1,5 +1,5 @@
 {
-  "name": "chatgpt-plugin-terminal",
+  "name": "terminal-gpt",
   "version": "1.0.0",
   "description": "ChatGPT universal command line plugin",
   "main": "src/index.js",
