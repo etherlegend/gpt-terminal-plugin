@@ -1,9 +1,8 @@
-# 🤖🖥️ TerminalGPT 
+# 🤖🖥️ GPT Terminal Plugin
 #### ChatGPT Universal Terminal / Command Line Plugin
 
-Use ChagGPT as a terminal to get things done for you, connecting with your computer. You can state what you want in natural language, like "translate file somefile.txt in documents folder from english to french" or "create a pet-store website in my xyz folder" and the plugin will accomplish tasks for you.
+Use ChatGPT as a terminal to get things done for you, connecting with your computer. You can state what you want in natural language, like "translate file somefile.txt in documents folder from english to french" or "create a pet-store website in my xyz folder" and the plugin will accomplish tasks for you.
 
-![Watch The Video](https://youtu.be/7d6ALA-gA34)
 
 First of all, you need ChatGPT plugin/developer access to try this as this is a plugin for ChatGPT. If you do not already have plugin developer access, please [join the waitlist](https://openai.com/waitlist/plugins).
 
@@ -33,7 +32,7 @@ First of all, you need ChatGPT plugin/developer access to try this as this is a 
 1. Clone the repository
 
 ```
-git clone https://github.com/etherlegend/terminal-gpt.git
+git clone https://github.com/etherlegend/gpt-terminal-plugin.git
 ```
 
 2. Navigate to the project directory
