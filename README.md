@@ -6,7 +6,9 @@ You need ChatGPT plugin/developer access to try this. If you do not already have
 
 You can read the [plugin documentation from OpenAI](https://platform.openai.com/docs/plugins/).
 
-If you are looking for a boilerplate to build plugins in NodeJs, try my ChatGPT NodeJS boilerplate [here](https://github.com/etherlegend/chatgpt-universal-terminal)
+If you are looking for a boilerplate to build plugins in NodeJs, try my ChatGPT NodeJS boilerplate [here](https://github.com/etherlegend/chatgpt-universal-terminal). 
+
+The plugin can modify files in your file system, so use this responsibly :)
 
 ## What you can do with it
 
