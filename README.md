@@ -12,6 +12,8 @@ The plugin can modify files in your file system, so use this responsibly :)
 
 ## What you can do with it
 
+Pretty much anything, and more!! 
+
 #### Clone Github Repos
 
 ![image Clone github repos](./images/Clone_Github_Repos.png)
