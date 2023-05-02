@@ -35,7 +35,7 @@ Try translating content between files, summarising text etc etc..
 1. Clone the repository
 
 ```
-git clone https://github.com/yourusername/terminal-gpt.git
+git clone https://github.com/etherlegend/terminal-gpt.git
 ```
 
 2. Navigate to the project directory
