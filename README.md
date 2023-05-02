@@ -38,7 +38,7 @@ git clone https://github.com/etherlegend/gpt-terminal-plugin.git
 2. Navigate to the project directory
 
 ```
-cd chatgpt-universal-terminal
+cd gpt-terminal-plugin
 ```
 
 3. Install the required dependencies
